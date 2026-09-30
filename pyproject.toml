@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "telegram_erp_agent"
+version = "0.2.0"
+description = "Agente inteligente de Telegram para gestion de inventarios y procesos ERP"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "sqlalchemy>=2.0.0",
+    "pydantic>=2.6.0",
+    "reportlab>=4.0.0",
+    "python-dotenv>=1.0.0",
+    "python-telegram-bot>=22.0.0",
+    "google-genai>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
