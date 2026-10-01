@@ -1,0 +1,19 @@
+# ==============================================================================
+# docker-compose.yml — Telegram ERP Agent
+# Ejecución en un solo comando: docker compose up --build -d
+# ==============================================================================
+
+services:
+  telegram-erp-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: telegram-erp-agent
+    volumes:
+      # Persistencia de la base de datos de inventario y los reportes PDF generados
+      - ./erp_inventory.db:/app/erp_inventory.db
+      - ./reports:/app/reports
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN:-}
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY:-}
+    restart: unless-stopped
