@@ -278,7 +278,7 @@ class ReportService:
         story.append(Spacer(1, 15))
         story.append(
             Paragraph(
-                "Documento de control interno y auditoria contable bajo estandares OKF v0.2.",
+                "Documento de control interno y auditoria contable de inventario ERP.",
                 sub_style,
             )
         )

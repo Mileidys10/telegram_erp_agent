@@ -65,4 +65,4 @@ python main.py
 - **Persistencia:** `SQLAlchemy` 2.0 + SQLite ACID
 - **Reportes:** `ReportLab` 4.0
 - **Validación de Datos:** `Pydantic` v2
-- **Gobernanza:** Estándar Google Cloud OKF v0.2
+- **Arquitectura:** Clean Architecture, Servicios de Dominio & Testing Automatizado

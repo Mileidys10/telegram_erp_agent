@@ -1,6 +1,6 @@
 # ==============================================================================
 # Dockerfile — Agente Autónomo de Telegram ERP
-# Gobernado por el Estándar Google Cloud OKF v0.2
+# Telegram ERP Agent - Contenedorización Docker
 # ==============================================================================
 
 FROM python:3.11-slim
